@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 body{
@@ -34,6 +35,13 @@ body{
 .img-boludos {
     width: 180px;
     height: 140px;
-    border-radius: 50%; 
-    margin: 20px;  
+    /* border-radius: 50%; 
+    margin: 20px; */ 
+}
+
+@media screen and (max-width: 780px) {
+    .app{
+        background-color: aqua;
+        flex-wrap: wrap;
+    }
 }
