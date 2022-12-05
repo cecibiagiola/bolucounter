@@ -1,0 +1,29 @@
+button {
+    width: 250px;
+    height: 48px;
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: white;
+    border: 2px solid white;
+    border-radius: 15px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+
+.click-button{
+    background-color: rgb(25, 241, 25);
+}
+
+.click-button:hover{
+    background-color: rgb(14, 137, 14);
+}
+
+.reset-button{
+    background-color: rgb(247, 83, 64);
+}
+
+.reset-button:hover{
+    background-color: rgb(160, 55, 43);
+}
