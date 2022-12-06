@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "sweetalert2": "^11.6.15"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
