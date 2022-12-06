@@ -21,7 +21,7 @@ body{
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    justify-content:baseline;
+    justify-content:flex-start;
     font-family: 'Poppins', sans-serif;
     background-color: rgb(41, 17, 161);
 }
@@ -35,13 +35,29 @@ body{
 .img-boludos {
     width: 180px;
     height: 140px;
-    /* border-radius: 50%; 
-    margin: 20px; */ 
+    border-radius: 50%;
+    margin: 10px;
 }
 
 @media screen and (max-width: 780px) {
     .app{
-        background-color: aqua;
+        width: 100%;
         flex-wrap: wrap;
+        align-items: center;
+    }
+    .main-title {
+        font-size: 20px;
+        padding: 10px;
+    }
+    .img-boludos {
+        width: 100px;
+        height: 80px;
+    }
+    .title-img{
+        width: 80%;
+        padding: 0px;
+        margin-bottom: 10px;
+        justify-content: center;
+        
     }
 }

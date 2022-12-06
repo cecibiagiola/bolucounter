@@ -1,5 +1,7 @@
 {
   "dependencies": {
+    "bootstrap": "^5.2.3",
+    "react-bootstrap": "^2.6.0",
     "sweetalert2": "^11.6.15"
   },
   "devDependencies": {

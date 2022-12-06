@@ -11,3 +11,19 @@
     margin-bottom: 15px;
     font-family: 'Poppins', sans-serif;
 }
+
+@media screen and (max-width: 780px) {
+   .main-container{
+        min-width: 160px;
+        height: 160px;
+        font-size: 100px;
+        padding: 25px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 8px solid white;
+        margin-bottom: 15px;
+        font-family: 'Poppins', sans-serif;
+   }
+}

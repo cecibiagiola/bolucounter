@@ -13,7 +13,7 @@ button {
 
 
 .click-button{
-    background-color: rgb(25, 241, 25);
+    background-color: #5cb85c;
 }
 
 .click-button:hover{
@@ -26,4 +26,14 @@ button {
 
 .reset-button:hover{
     background-color: rgb(160, 55, 43);
+}
+
+@media screen and (max-width: 780px){
+    button {
+        width: 200px;
+        height: 48px;
+        font-size: 24px;
+        margin: 5px;
+        
+    }
 }
