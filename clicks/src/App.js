@@ -3,12 +3,19 @@ import {Counter} from './Counter/index.js'
 import {Button} from './Button/index.js'
 import { useState } from 'react';
 import Boludos from './img/boludos.jpg';
-import Swal from 'sweetalert2';
+import Swal from 'sweetalert2'; 
+import { Saved } from './Saved/Saved';
+import { useLocalStorage } from './useLocalStorage'; 
 
  
 
 function App() {
-  const [ numClicks, setNumClicks] = useState(0);
+  
+  const [numClicks, setNumClicks] = useState(0);
+
+
+  const [num, savedNum] = useLocalStorage('NUMBERS_V1')
+
   
   const onHandleClick = () => {
     setNumClicks(numClicks + 1);
@@ -20,10 +27,10 @@ function App() {
         icon: 'warning',
         confirmButtonText: 'Ok, no'
       });
-    }
-  
-    
+    }  
   };
+
+ 
   
   const resetCounter = () => {
     Swal.fire({
@@ -32,8 +39,13 @@ function App() {
       icon: 'success',
       confirmButtonText: 'Merezco vacaciones'
     });
-    setNumClicks(0);  
+    
+    savedNum(parseInt(num + numClicks));
+    setNumClicks(0);    
   };
+
+
+
   return (
     <div className='app'>
       
@@ -45,7 +57,8 @@ function App() {
           <h1 className='main-title'>Contador de Boludos</h1>
           </div>
         <Counter
-          numClicks= {numClicks} />
+          numClicks= {numClicks} 
+          />
         <Button
           text='Otro Boludo'
           clickButton={true}
@@ -54,7 +67,9 @@ function App() {
           text='Reset'
           clickButton={false}
           onHandleClick={ resetCounter } /> 
-      
+        <Saved
+        saved={num}/>
+         
  </div>
     
   );

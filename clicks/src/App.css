@@ -6,7 +6,8 @@
 }
 
 body{
-    background-color: rgb(2, 2, 110);
+    background-color: rgb(1, 1, 43);
+    
 }
 
 .main-title {
@@ -15,21 +16,26 @@ body{
 }
 .app{
     width: 80%;
-    height: 100vh;
+    min-height: 600px;
     margin: auto;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content:flex-start;
     font-family: 'Poppins', sans-serif;
-    background-color: rgb(41, 17, 161);
+    background-color: rgb(30, 12, 116);
+    border-radius: 20px;
 }
 .title-img{
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 10px;
     margin-top: 40px;
+    
 }
 
 .img-boludos {
@@ -41,7 +47,7 @@ body{
 
 @media screen and (max-width: 780px) {
     .app{
-        width: 100%;
+       
         flex-wrap: wrap;
         align-items: center;
     }
