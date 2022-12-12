@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/bolucounter/static/css/main.b1ca9e44.css",
-    "main.js": "/bolucounter/static/js/main.b07fa5f7.js",
+    "main.css": "/bolucounter/static/css/main.a2e767f0.css",
+    "main.js": "/bolucounter/static/js/main.7d0ae8b8.js",
     "static/media/boludos.jpg": "/bolucounter/static/media/boludos.ed49b95303b196424629.jpg",
     "index.html": "/bolucounter/index.html",
-    "main.b1ca9e44.css.map": "/bolucounter/static/css/main.b1ca9e44.css.map",
-    "main.b07fa5f7.js.map": "/bolucounter/static/js/main.b07fa5f7.js.map"
+    "main.a2e767f0.css.map": "/bolucounter/static/css/main.a2e767f0.css.map",
+    "main.7d0ae8b8.js.map": "/bolucounter/static/js/main.7d0ae8b8.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1ca9e44.css",
-    "static/js/main.b07fa5f7.js"
+    "static/css/main.a2e767f0.css",
+    "static/js/main.7d0ae8b8.js"
   ]
 }
