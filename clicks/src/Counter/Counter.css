@@ -3,12 +3,13 @@
     height: 200px;
     font-size: 120px;
     padding: 25px;
-    color: white;
+    color: rgb(3, 3, 87);
     border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 8px solid white;
+    border: 8px solid rgb(3, 3, 87);
+    margin-top: 15px;
     margin-bottom: 15px;
     font-family: 'Poppins', sans-serif;
 }
@@ -19,11 +20,11 @@
         height: 160px;
         font-size: 100px;
         padding: 25px;
-        color: white;
+        
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 8px solid white;
+        
         margin-bottom: 15px;
         font-family: 'Poppins', sans-serif;
    }

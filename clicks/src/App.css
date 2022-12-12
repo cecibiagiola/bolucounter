@@ -2,68 +2,102 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 body{
-    background-color: rgb(1, 1, 43);
-    
+    background-color: rgb(234, 234, 234);
+   
 }
 
 .main-title {
     font-size: 40px;
     color: white;
+    margin-top: 100px;
 }
 .app{
     width: 80%;
-    min-height: 600px;
+    height: 800px;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 80px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content:flex-start;
     font-family: 'Poppins', sans-serif;
-    background-color: rgb(30, 12, 116);
+    background-color: rgb(216, 216, 218);
     border-radius: 20px;
+    box-shadow: 0px 1px 55px 10px rgba(1,1,43,0.7);
+    -webkit-box-shadow: 0px 1px 55px 10px rgba(1,1,43,0.7);
+-moz-box-shadow: 0px 1px 55px 10px rgba(1,1,43,0.7);
+}
+
+.app::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 60px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 30px 60px 30px;
+    border-color: transparent transparent rgb(3, 3, 87) transparent;
+
 }
 .title-img{
-    width: 100%;
+    width: 80%;
+    height: 200px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 10px;
-    margin-top: 40px;
-    
+    margin-bottom: 20px;
+    background-color: rgb(3, 3, 87);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
 .img-boludos {
+    top: 0px;
     width: 180px;
-    height: 140px;
+    height: 180px;
     border-radius: 50%;
+    border: 2px solid white;
     margin: 10px;
+    position: absolute;
 }
 
+
+
+
+/* //RESPONSIVE */
 @media screen and (max-width: 780px) {
     .app{
-       
+        margin-top: 40px;
+        height: 600px;
         flex-wrap: wrap;
         align-items: center;
     }
     .main-title {
         font-size: 20px;
         padding: 10px;
+        margin-top: 60px;
     }
     .img-boludos {
         width: 100px;
-        height: 80px;
+        height: 100px;
     }
     .title-img{
+        flex-direction: row;
         width: 80%;
+        height: 140px;
         padding: 0px;
         margin-bottom: 10px;
-        justify-content: center;
-        
+        justify-content: center;   
+    }
+    .app::after{
+        margin-bottom: 10px;
     }
 }
