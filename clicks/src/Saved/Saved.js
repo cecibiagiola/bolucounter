@@ -4,7 +4,7 @@ import './Saved.css'
 const Saved = ({saved} ) => {
   return (
     <div className='saved-container'>
-      <p>Atendiste {saved} boludos</p>
+      <p> Atendiste {saved} boludos</p>
     </div>
   )
 }

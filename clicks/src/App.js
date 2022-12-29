@@ -14,7 +14,7 @@ function App() {
   const [numClicks, setNumClicks] = useState(0);
 
 
-  const [num, savedNum] = useLocalStorage('NUMBERS_V1')
+  const [num, savedNum] = useLocalStorage('NUMBERS_V1', [])
 
   
   const onHandleClick = () => {
@@ -40,7 +40,8 @@ function App() {
       confirmButtonText: 'Merezco vacaciones'
     });
     
-    savedNum(parseInt(num + numClicks));
+    
+    savedNum(numClicks);
     setNumClicks(0);    
   };
 

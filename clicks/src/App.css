@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* overflow: hidden; */
+    
 }
 
 body{
@@ -33,18 +33,7 @@ body{
 -moz-box-shadow: 0px 1px 55px 10px rgba(1,1,43,0.7);
 }
 
-.app::after{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 60px;
-    width: 0px;
-    height: 0px;
-    border-style: solid;
-    border-width: 0 30px 60px 30px;
-    border-color: transparent transparent rgb(3, 3, 87) transparent;
 
-}
 .title-img{
     width: 80%;
     height: 200px;
@@ -96,8 +85,5 @@ body{
         padding: 0px;
         margin-bottom: 10px;
         justify-content: center;   
-    }
-    .app::after{
-        margin-bottom: 10px;
     }
 }

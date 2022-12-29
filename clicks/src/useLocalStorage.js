@@ -20,7 +20,7 @@ const useLocalStorage = (total, initialValue) => {
   const savedNumbers = (newNum) => {
     const stringified = JSON.stringify(newNum);
     localStorage.setItem(total, stringified);
-    setNumbers(newNum)
+    setNumbers(prevSta => parseInt(prevSta + newNum))
   }
   
   return [
