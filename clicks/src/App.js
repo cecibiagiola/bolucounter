@@ -4,8 +4,8 @@ import {Button} from './Button/index.js'
 import { useState } from 'react';
 import Boludos from './img/boludos.jpg';
 import Swal from 'sweetalert2'; 
-import { Saved } from './Saved/Saved';
-import { useLocalStorage } from './useLocalStorage'; 
+/* import { Saved } from './Saved/Saved'; */
+/* import { useLocalStorage } from './useLocalStorage';  */
 
  
 
@@ -14,7 +14,7 @@ function App() {
   const [numClicks, setNumClicks] = useState(0);
 
 
-  const [num, savedNum] = useLocalStorage('NUMBERS_V1', [])
+  /* const [num, savedNum] = useLocalStorage('NUMBERS_V1', []) */
 
   
   const onHandleClick = () => {
@@ -41,7 +41,7 @@ function App() {
     });
     
     
-    savedNum(numClicks);
+    /* savedNum(numClicks); */
     setNumClicks(0);    
   };
 
@@ -68,8 +68,8 @@ function App() {
           text='Reset'
           clickButton={false}
           onHandleClick={ resetCounter } /> 
-        <Saved
-        saved={num}/>
+        {/* <Saved
+        saved={num}/> */}
          
  </div>
     
