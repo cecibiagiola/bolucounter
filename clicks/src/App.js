@@ -4,8 +4,9 @@ import {Button} from './Button/index.js'
 import { useState } from 'react';
 import Boludos from './img/boludos.jpg';
 import Swal from 'sweetalert2'; 
-/* import { Saved } from './Saved/Saved'; */
-/* import { useLocalStorage } from './useLocalStorage';  */
+import { Saved } from './Saved/Saved'; 
+import { useLocalStorage } from './hooks/useLocalStorage';
+
 
  
 
@@ -13,13 +14,15 @@ function App() {
   
   const [numClicks, setNumClicks] = useState(0);
 
-
-  /* const [num, savedNum] = useLocalStorage('NUMBERS_V1', []) */
+  //Acordate que esto adentro, aparte de guardar en el localStoga, tambien guarda el estado (useState) :O
+  const [total, setTotal] = useLocalStorage("totalBoloCounter", 0);
 
   
-  const onHandleClick = () => {
+  const  onHandleClick = () => {
     setNumClicks(numClicks + 1);
-
+    // Guarda con esto!
+    // Por que cuando en la app llega al 10 no se ve el carteltilo? Pero si al 11?
+    // Si ahi dice que se dispare al === 10 !
     if(numClicks === 10){
       Swal.fire({
         title: 'Advertencia',
@@ -39,9 +42,7 @@ function App() {
       icon: 'success',
       confirmButtonText: 'Merezco vacaciones'
     });
-    
-    
-    /* savedNum(numClicks); */
+    setTotal(total + numClicks);
     setNumClicks(0);    
   };
 
@@ -68,8 +69,8 @@ function App() {
           text='Reset'
           clickButton={false}
           onHandleClick={ resetCounter } /> 
-        {/* <Saved
-        saved={num}/> */}
+         <Saved
+        saved={total}/> 
          
  </div>
     
