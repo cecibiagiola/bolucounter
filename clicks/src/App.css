@@ -24,7 +24,7 @@ body{
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    justify-content:space-between;
+    justify-content:flex-start;
     font-family: 'Poppins', sans-serif;
     background-color: rgb(249, 249, 249);
     border-radius: 8px;
