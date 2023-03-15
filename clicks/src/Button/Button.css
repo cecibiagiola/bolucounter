@@ -1,19 +1,20 @@
 button {
     width: 250px;
-    height: 48px;
-    font-size: 28px;
+    height: 52px;
+    font-size: 24px;
     font-family: 'Poppins', sans-serif;
-    font-weight: bold;
     color: white;
     border: none;
     border-radius: 15px;
     margin: 5px;
     cursor: pointer;
+   
 }
 
 
 .click-button{
     background-color: #5cb85c;
+    /* margin-bottom: 12px; */
 }
 
 .click-button:hover{

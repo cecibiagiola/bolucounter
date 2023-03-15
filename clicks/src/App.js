@@ -6,6 +6,7 @@ import Boludos from './img/boludos.jpg';
 import Swal from 'sweetalert2'; 
 import { Saved } from './Saved/Saved'; 
 import { useLocalStorage } from './hooks/useLocalStorage';
+import Footer from './Footer/Footer';
 
 
  
@@ -62,16 +63,16 @@ function App() {
           numClicks= {numClicks} 
           />
         <Button
-          text='Otro Boludo'
+          text='Sumar Boludo'
           clickButton={true}
           onHandleClick={ onHandleClick } /> 
         <Button
-          text='Reset'
+          text='Finalizar'
           clickButton={false}
           onHandleClick={ resetCounter } /> 
          <Saved
         saved={total}/> 
-         
+        <Footer/>
  </div>
     
   );

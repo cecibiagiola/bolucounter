@@ -1,5 +1,7 @@
 /* Lo puse en negro para que sea mas bello de que es (no se venia) */
 .saved-container {
-  font-size: small;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
   color: rgb(0, 0, 0);
+  
 }
